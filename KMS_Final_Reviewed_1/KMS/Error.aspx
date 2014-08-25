@@ -1,0 +1,20 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Error.aspx.cs" Inherits="KMS.Error" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="imgError" runat="server" ImageUrl="~/images/oops.jpg"/>
+         <br />
+        <asp:Label ID="lblError" runat="server" 
+            Text="Sorry! The page you requested is not found in our Records..." 
+            Font-Bold="True" Font-Italic="True" Font-Size="X-Large" ForeColor="#CC0000"></asp:Label>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,575 @@
+﻿/* Script written and modified by vamsee
+----------------------------------------------------------*/
+
+body   
+{
+   
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  background-color: #B8B8B8;
+  margin: 0px;
+    padding: 0px;
+ 
+    
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+.para
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    height: 41px;
+    width: 367px;
+    position: relative;
+    top: -169px;
+    left: 213px;
+    margin-top: 0px;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666;
+
+
+
+
+
+
+
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 2.2em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: auto;
+    height: auto;
+  
+    background-color: #E5E5E5;
+    margin: 0px auto 0px auto;
+    border: 1px solid #496077;
+    
+ 
+}
+
+.header
+{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    background: #4C4C4C;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 20px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2.5em;
+}
+
+.main
+{
+    padding: 170px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 200px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    /*background-color:#4A4A4A;*/
+    background-color:#262626;
+   width:100%;
+  position: fixed;
+
+ 
+ 
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+    
+  
+}
+
+div.menu ul
+{
+    /*list-style:none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height:auto;*/
+    
+    
+     
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+   /* background-color: #CCCCCC;
+    border: 1px #4e667d solid;
+    color: #000000;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;*/
+    
+     
+    
+   /* float: left;
+  padding: 0px;*/
+    
+}
+/* added by kiran-------------*/
+div .menu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+}
+div .menu ul {
+  background: #333333;
+  height: auto;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+div .menu li {
+  float: left;
+  padding: 0px;
+}
+div .menu li a {
+  background: #333333 url('../images/seperator.png') bottom right no-repeat;
+  display: block;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0px;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+div .menu > ul > li > a {
+  color: #cccccc;
+}
+div .menu ul ul a {
+  color: #cccccc;
+}
+div .menu li > a:hover,
+div .menu ul li:hover > a {
+  background: #2580a2 url('../images/hover.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+div .menu li ul {
+  background: #333333;
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 225px;
+  z-index: 200;
+  /*top:1em;
+	/*left:0;*/
+
+}
+div .menu li:hover ul {
+  display: block;
+}
+div .menu li li {
+  background: url('../images/sub_sep.png') bottom left no-repeat;
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
+}
+div .menu li:hover li a {
+  background: none;
+}
+div .menu li ul a {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+div .menu li ul a:hover,
+div .menu li ul li:hover > a {
+  background: #54c76b url('../images/hover_sub.png') center left no-repeat;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+div .menu p {
+  clear: left;
+}
+
+
+
+/*--------------------*/
+div.menu ul li a:hover
+{
+   /* background-color: #ADD6FF;
+    color: #465c71;
+    text-decoration: none;*/
+   
+}
+
+
+div.menu ul li a:active
+{
+    background-color: #2E8AE6;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+
+
+/*------CSS from Kiran---------------*/
+
+.form-control {
+  display: block;
+  width: 200px;
+  height: 25px;
+  padding: 1px 3px;
+  font-size: 12px;
+  line-height: 1.0;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+    
+}
+
+.btn:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+
+}
+
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  text-decoration: none;
+}
+
+.btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-lg-primary {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+   color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+ 
+}
+
+.btn-sm-primary {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+   color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  
+}
+
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+ 
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+    font-family:Sans-Serif;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    height:80px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+width:200px;
+float:right;
+background-color:#99B2FF;
+border:solid 1px #3D7A99;
+}
+#panel
+{
+padding:40px;
+width:400px;
+}
+
+.panels
+{
+    padding:5px;
+text-align:center;
+width:150px;
+float:left;
+background-color:#99B2FF;
+border:solid 1px #3D7A99;
+}
+
+
+.icon
+{
+    width:20px;
+    height:20px;
+}

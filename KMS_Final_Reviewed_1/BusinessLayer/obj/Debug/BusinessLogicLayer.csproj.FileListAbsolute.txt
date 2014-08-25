@@ -1,0 +1,7 @@
+C:\Users\389861\Documents\Visual Studio 2010\Projects\KMS\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\389861\Documents\Visual Studio 2010\Projects\KMS\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\389861\Documents\Visual Studio 2010\Projects\KMS\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\389861\Documents\Visual Studio 2010\Projects\KMS\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\389861\Documents\Visual Studio 2010\Projects\KMS\BusinessLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\389861\Documents\Visual Studio 2010\Projects\KMS\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\389861\Documents\Visual Studio 2010\Projects\KMS\BusinessLayer\obj\Debug\BusinessLayer.pdb
